@@ -28,8 +28,10 @@ ul {
 
         li a:hover {
             text-decoration: underline;
+            transform: translateY(-5px);
+            transition: transform 300ms;
         }
-
+             
         .UL_Secondary {
             li {
                 float: right;
@@ -68,6 +70,8 @@ footer {
         display: block;
         img {
             width: 100%;
+            height: 167px;
+            object-fit: cover;
             transition: transform 300ms;
         }
     }
@@ -103,10 +107,16 @@ footer {
 .about, .contact {
     div.card {
         flex-basis: 40%;
+        .card_image img {
+            height: 367px;
+        }
     }
 }
 .modelling, .coding, .photography, .videography {
     div.card {
         flex-basis: 30%;
+        .card_image img {
+            height: 267px;
+        }
     }
 }
