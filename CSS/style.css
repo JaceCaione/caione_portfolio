@@ -1,15 +1,19 @@
 /*Body CSS*/
 body {
-    background-color: #1e1e1e;
-    font-family: 'Courier New', Courier, monospace;
+    background: #191C1D;
+    background: linear-gradient(to bottom right, rgba(25, 28, 29, 1) 0%, rgba(25, 28, 29, 1) 62%, rgba(48, 136, 164, 1) 100%);
+    font-family: 'Kedebideri', sans-serif;
+    min-height: 98.25vh;
 }
+
+
 /*Nav CSS*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#4a4b86;
+    background-color:#3088A4;
    
         li {
             float: left;
@@ -23,7 +27,7 @@ ul {
             padding: 14px 16px;
         }
         li.current a {
-            background-color: #727eff;
+            background-color: #3088A4;
         }
 
         li a:hover {
@@ -37,46 +41,33 @@ ul {
                 float: right;
             }
         }
-} 
-/*Footer CSS*/
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 10%;
-    width: 100%;
-    background-color:#4a4b86;
-    color: white;
-    text-align: center;
 }
+
 /*Cards CSS*/
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    gap: 5%;
-    height: 300px;
+.swiper {
+    width: 800px;
+    height: 610px;
+    margin-top: 5%;
 }
-.card {
-    flex-basis: 20%;
-    flex-shrink: 0;
-    background-color:#4a4b86;
+
+.swiper-slide {
     transition: transform 150ms;
     color: white;
+    padding-bottom: 0.5em;
 
-    .card_image {
+    .swiper-image {
         overflow: hidden;
-        display: block;
+        
         img {
+            display: block;
             width: 100%;
-            height: 167px;
+            height: 450px;
             object-fit: cover;
             transition: transform 300ms;
         }
     }
      
-    .card_text {
+    .swiper-text {
         padding: 1.25;
           
         p {
@@ -84,7 +75,8 @@ footer {
         }
         h2 {
             text-align: center;
-
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 600;
             a {
                 color: white;
                 text-decoration: none;
@@ -96,27 +88,9 @@ footer {
     }
      
     &:hover {
-        transform: translateY(-10px);
-        .card_image img {
+        .swiper-image img {
             transform: scale(1.1);
         }
           
-    }
-}
-/*Page Specific*/
-.about, .contact {
-    div.card {
-        flex-basis: 40%;
-        .card_image img {
-            height: 367px;
-        }
-    }
-}
-.modelling, .coding, .photography, .videography {
-    div.card {
-        flex-basis: 30%;
-        .card_image img {
-            height: 267px;
-        }
     }
 }

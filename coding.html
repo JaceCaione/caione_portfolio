@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Coding</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="Scripts/script.js" async defer></script>
 </head>
 <body class="coding">
     <!--Navigation-->
@@ -13,35 +16,40 @@
             <li><a href="index.html">Home</a></li>
             <li class = "current"><a href="coding.html">Coding</a></li>
             <li><a href="photography.html">Photography</a></li>
-            <li><a href="videography.html">Videography</a></li>
             <li><a href="3d_work.html">3d Work</a></li>
+            <li><a href="demoreel.html">Demo Reel</a></li>
                 <ul class = "UL_Secondary">
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
                 </ul>
         </ul>
     </nav>
-    <!--Card Row-->
-    <div class="row">
-            <!--Card 1-->
-            <div class="card">
-                <div class="card_image"><img src="Images/Coding_CardImage.png" alt="A screenshot of the current website's code."></div>
-                <div class="card_text">
-                        <h2>Portfolio Website</h2>
-                        <p>Peak behind the curtains and take a look at some of this website's own code! This displays the code for the website's cards, particularly the coding card.</p>
-            </div>
-            <!--Card 2-->
-            </div>
-                <div class="card">
-                    <div class="card_image"><img src="Images/Coding_KirbyCheck.png" alt="A screenshot of a creative coding portion."></div>
-                    <div class="card_text">
-                        <h2>PixiJS Location Check</h2>
-                        <p>Made for a creative coding project during college, this piece of code is used to check the location of two "eye" shapes; if correct, it will play a check sound!</p>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+                <!--Card 1-->
+                <div class="swiper-slide">
+                    <div class="swiper-image"><a href="Images/Coding_CardImage.png" target="_blank"><img src="Images/Coding_CardImage.png" alt="A screenshot of the current website's code."></a></div>
+                    <div class="swiper-text">
+                            <h2>Portfolio Website</h2>
+                            <p>This displays the portfolio's old code, which has now been replaced with a newer Swiper.js system. The original code displayed here was made with only HTML and CSS code. The "card" class transfers overall properties such as maximum size, and background colour.In contrast the card text and card image are much simpler and mostly contain the image you see now as well as the old version of this card's text.</p>
+                    </div>
                 </div>
-            </div>
+                <!--Card 2-->
+                <div class="swiper-slide">
+                        <div class="swiper-image"><a href="Images/Coding_KirbyCheck.png" target="_blank"><img src="Images/Coding_KirbyCheck.png" alt="A screenshot of a creative coding portion."></a></div>
+                        <div class="swiper-text">
+                            <h2>PixiJS Location Check</h2>
+                            <p>Made for a creative coding project during college, this piece of code is used to check the location of two "eye" shapes. If the check is true, the eye will be dragged into it's exact place but if it is still false the eye will return to where it was. When checked to true, the code will also trigger a check sound effect. For this exercise I personally chose to create a minigame in which you would create Kirby in reference to the old "How to draw Kirby" videos.</p>
+                        </div>
+                </div>
+        </div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <!--Footer-->
-    <footer>
-    </footer>
 </body>
 </html>

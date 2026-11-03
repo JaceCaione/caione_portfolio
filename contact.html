@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="CSS/style.css">
     <!--Title-->
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="Scripts/script.js" async defer></script>
 </head>
 <body class="contact">
     <!--Navigation-->
@@ -15,27 +18,27 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="coding.html">Coding</a></li>
             <li><a href="photography.html">Photography</a></li>
-            <li><a href="videography.html">Videography</a></li>
             <li><a href="3d_work.html">3d Work</a></li>
+            <li><a href="demoreel.html">Demo Reel</a></li>
                 <ul class = "UL_Secondary">
                 <li><a href="about.html">About Me</a></li>
                 <li class = "current"><a href="contact.html">Contact Me</a></li>
                 </ul>
         </ul>
     </nav>
-    <!--Card Row-->
-    <div class="row">
-            <!--Card 1-->
-            <div class="card">
-                <div class="card_image"></div>
-                <div class="card_text">
-                        <h2>Contact Me</h2>
-                        <p>Work eMail - jacecaione@gmail.com</p>
-                </div>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <!--Card 1-->
+                    <div class="swiper-slide">
+                        <div class="swiper-image"><img src="Images/Coding_CardImage.png" alt="A portrait photo of the creator of this website: Jace Caione."></div>
+                        <div class="swiper-text">
+                                <h2>Contact Me</h2>
+                                <p>Work eMail - jacecaione@gmail.com</p>
+                        </div>
+                    </div>
             </div>
     </div>
-    <!--Footer-->
-    <footer>
-    </footer>
 </body>
 </html>

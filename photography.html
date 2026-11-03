@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Photography</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="Scripts/script.js" async defer></script>
 </head>
 <body class="photography">
     <!--Navigation-->
@@ -13,35 +16,40 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="coding.html">Coding</a></li>
             <li class = "current"><a href="photography.html">Photography</a></li>
-            <li><a href="videography.html">Videography</a></li>
             <li><a href="3d_work.html">3d Work</a></li>
+            <li><a href="demoreel.html">Demo Reel</a></li>
                 <ul class = "UL_Secondary">
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
                 </ul>
         </ul>
     </nav>
-    <!--Card Row-->
-    <div class="row">
-            <!--Card 1-->
-            <div class="card">
-                <div class="card_image"><img src="Images/Photography_CardImage.jpg" alt="A photo of a mossy log and the surrounding forest floor."></div>
-                <div class="card_text">
-                        <h2>Mossy Log</h2>
-                        <p>Taken during a trip to the Kekabeka Falls, this photo displays a moss covered log and the surrounding forest floor; it's been edited to accentuate colder colours and cropped to provide a more focused composition.</p>
-            </div>
-            <!--Card 2-->
-            </div>
-                <div class="card">
-                    <div class="card_image"><img src="Images/Photography_DarkFood.jpg" alt="A variety of prop foods, photographed in dark lighting."></div>
-                    <div class="card_text">
-                        <h2>Dark Food Project</h2>
-                        <p>This photo was taken for a college assignment; we were tasked with photographing food props in dark lighting. The edits that went into the image were to crop out some portions as well as increasing visibility while still keeping the theme.</p>
+
+<!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+                <!--Card 1-->
+                <div class="swiper-slide">
+                    <div class="swiper-image"><a href="Images/Photography_CardImage.jpg" target="_blank"><img src="Images/Photography_CardImage.jpg" alt="A photo of a mossy log and the surrounding forest floor."></a></div>
+                    <div class="swiper-text">
+                            <h2>Mossy Log</h2>
+                            <p>Taken during a trip to the Kekabeka Falls, this photo displays a moss covered log and the surrounding forest floor; it's been edited to accentuate colder colours and cropped to provide a more focused composition. This project was specifically my 3rd Semester project for my photography class. I had chosen to do more nature photography as I had believed that it was a strongsuit of my previous photos.</p>
+                    </div>
                 </div>
-            </div>
+                <!--Card 2-->
+                <div class="swiper-slide">
+                        <div class="swiper-image"><a href="images/Photography_DarkFood.jpg" target="_blank"><img src="Images/Photography_DarkFood.jpg" alt="A variety of prop foods, photographed in dark lighting."></a></div>
+                        <div class="swiper-text">
+                            <h2>Dark Lighting</h2>
+                            <p>This photo was taken for a college assignment; we were tasked with photographing food props in dark lighting. The edits that went into the image were to crop out some portions as well as increasing visibility while still keeping the theme. It was an exceptionally interesting experience and served to reinforce my personal preference for calm and desaturated tones, scenes, and colours.</p>
+                        </div>
+                </div>
+        </div>
+        
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <!--Footer-->
-    <footer>
-    </footer>
 </body>
 </html>

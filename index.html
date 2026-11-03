@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="CSS/style.css">
     <!--Title-->
     <title>Home</title>
+    <!--Google Font Imports-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kedebideri:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="Scripts/script.js" async defer></script>
 </head>
 <body class="home">
     <!--Navigation-->
@@ -15,67 +22,71 @@
             <li class = "current"><a href="index.html">Home</a></li>
             <li><a href="coding.html">Coding</a></li>
             <li><a href="photography.html">Photography</a></li>
-            <li><a href="videography.html">Videography</a></li>
             <li><a href="3d_work.html">3d Work</a></li>
+            <li><a href="demoreel.html">Demo Reel</a></li>
                 <ul class = "UL_Secondary">
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
                 </ul>
         </ul>
     </nav>
-    <!--Card Row-->
-    <div class="row">
-            <!--Card 1-->
-            <div class="card">
-                <div class="card_image"><img src="Images/Coding_CardImage.png" alt="A screenshot of the current website's code."></div>
-                <div class="card_text">
-                        <h2><a href="coding.html">Coding</a></h2>
-                        <p>
-                            "The process of writing computer code, typically for a digital purpose."
-                            <br>
-                            This section is dedicated to my Coding work.
-                        </p>
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+                <!--Card 1-->
+                <div class="swiper-slide">
+                    <div class="swiper-image"><img src="Images/Coding_CardImage.png" alt="A screenshot of the current website's code."></div>
+                    <div class="swiper-text">
+                            <h2><a href="coding.html">Coding</a></h2>
+                            <p>
+                                "The process of writing computer code, typically for a digital purpose."
+                                <br>
+                                This section is dedicated to my Coding work.
+                            </p>
+                    </div>
                 </div>
-            </div>
-            <!--Card 2-->
-            <div class="card">
-                    <div class="card_image"><img src="Images/Photography_CardImage.jpg" alt="A photo of a mossy log and the surrounding forest floor."></div>
-                    <div class="card_text">
-                        <h2><a href="photography.html">Photography</a></h2>
-                        <p>
-                            "The art of capturing an image as well as processing it."
-                            <br>
-                            This section is dedicated to my Photography work.
-                        </p>
-                    </div>
-            </div>
-            <!--Card 3-->
-            <div class="card">
-                    <div class="card_image"></div>
-                    <div class="card_text">
-                        <h2><a href="videography.html">Videography</a></h2>
-                        <p>
-                            "The art of recording and editing a film through electronic and digital means."
-                            <br>
-                            This section is dedicated to my Videography work.
-                        </p>
-                    </div>
-            </div>
-            <!--Card 4-->
-            <div class="card">
-                    <div class="card_image"></div>
-                    <div class="card_text">
-                        <h2><a href="3d_work.html">3d Work</a></h2>
-                        <p>
-                            "The art or process of creating, optimizing, and displaying a digital (re)creation of something."
-                            <br>
-                            This section is dedicated to my 3d Modelling work.
-                        </p>
-                    </div>
-            </div>
+                <!--Card 2-->
+                <div class="swiper-slide">
+                        <div class="swiper-image"><img src="Images/Photography_CardImage.jpg" alt="A photo of a mossy log and the surrounding forest floor."></div>
+                        <div class="swiper-text">
+                            <h2><a href="photography.html">Photography</a></h2>
+                            <p>
+                                "The art of capturing an image as well as processing it."
+                                <br>
+                                This section is dedicated to my Photography work.
+                            </p>
+                        </div>
+                </div>
+                <!--Card 3-->
+                <div class="swiper-slide">
+                        <div class="swiper-image"></div>
+                        <div class="swiper-text">
+                            <h2><a href="3d_work.html">3d Work</a></h2>
+                            <p>
+                                "The art or process of creating, optimizing, and displaying a digital (re)creation of something."
+                                <br>
+                                This section is dedicated to my 3d Modelling work.
+                            </p>
+                        </div>
+                </div>
+                <!--Card 4-->
+                <div class="swiper-slide">
+                        <div class="swiper-image"></div>
+                        <div class="swiper-text">
+                            <h2><a href="demoreel.html">Demo Reel</a></h2>
+                            <p>
+                                "A short video used primarily by the film industry to showcase previous works."
+                                <br>
+                                This section is dedicated to my Demo Reel.
+                            </p>
+                        </div>
+                </div>
+        </div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <!--Footer-->
-    <footer>
-    </footer>
 </body>
 </html>
