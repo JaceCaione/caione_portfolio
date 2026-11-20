@@ -57,7 +57,7 @@ ul {
 /*Cards CSS*/
 .swiper {
     width: 800px;
-    height: 610px;
+    height: 650px;
     margin-top: 5%;
     --swiper-scrollbar-drag-bg-color: rgba(0, 150, 0, 0.75) ;
 }
