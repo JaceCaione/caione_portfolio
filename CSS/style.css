@@ -1,19 +1,32 @@
 /*Body CSS*/
 body {
-    background: #191C1D;
-    background: linear-gradient(to bottom right, rgba(25, 28, 29, 1) 0%, rgba(25, 28, 29, 1) 62%, rgba(48, 136, 164, 1) 100%);
-    font-family: 'Kedebideri', sans-serif;
-    min-height: 98.25vh;
+    background-color: black;
+    background-image: linear-gradient(to bottom right, black 40%, rgba(0, 150, 0, 0.75));
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 5px rgb(163, 213, 163);
 }
-
-
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+    pointer-events: none;
+}
+::selection {
+    background: #0080FF;
+    text-shadow: none;
+}
 /*Nav CSS*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#3088A4;
+    background-color:rgb(3, 128, 3);
    
         li {
             float: left;
@@ -21,19 +34,17 @@ ul {
 
         li a {
             display: block;
-            color: white;
+            color: rgb(208, 241, 208);
             text-align: center;
             text-decoration: none;
             padding: 14px 16px;
         }
         li.current a {
-            background-color: #3088A4;
+            background-color: rgb(0, 101, 0);
         }
 
         li a:hover {
             text-decoration: underline;
-            transform: translateY(-5px);
-            transition: transform 300ms;
         }
              
         .UL_Secondary {
@@ -48,11 +59,12 @@ ul {
     width: 800px;
     height: 610px;
     margin-top: 5%;
+    --swiper-scrollbar-drag-bg-color: rgba(0, 150, 0, 0.75) ;
 }
 
 .swiper-slide {
     transition: transform 150ms;
-    color: white;
+    color: rgb(208, 241, 208);
     padding-bottom: 0.5em;
 
     .swiper-image {
@@ -75,10 +87,10 @@ ul {
         }
         h2 {
             text-align: center;
-            font-family: "Fira Sans", sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             font-weight: 600;
             a {
-                color: white;
+                color: rgb(208, 241, 208);
                 text-decoration: none;
             }
             a:hover {
